@@ -7,12 +7,31 @@ public class LinkedList<T> {
 	
 	public int size()
 	{
-		return 0;
+		return size;
 	}
 	
-	public void add(Node<T> node)
+	public void add(T item)
 	{
-		
+		 Node<T> node = new Node<T>(item);
+		 
+		 //If the list is empty, make this new node the first node
+	     if (this.head == null) 
+	     {
+	     	this.head = node;
+	     	this.size++;
+	     	return;
+	     }
+	     
+	     Node<T> currentNode = head;
+	     //Iterate until the last node in the list
+	     while(currentNode.next != null)
+	     {
+	    	 currentNode = currentNode.next;
+	     }
+	     
+	     //Add this new node to the end of the list
+	     currentNode.next = node;
+	     this.size++;
 	}
 	
 	public void add(int index, Node<T> node)
