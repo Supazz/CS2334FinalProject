@@ -15,15 +15,67 @@ public class LinkedList<T> {
 		
 	}
 	
+	public void add(int index, Node<T> node)
+	{
+		
+	}
+	
+	public void addFirst(Node<T> node)
+	{
+		
+	}
+	
+	public void addLast(Node<T> node)
+	{
+		
+	}
+	
+	public boolean contains(Object o)
+	{
+		return false;
+	}
+	
 	public void remove()
 	{
 		
 	}
 	
+	public void remove(int index)
+	{
+		
+	}
+	
+	public void remove(Object o)
+	{
+		
+	}
+	
+	public void removeFirst()
+	{
+		
+	}
+	/**
 	public T get(int index)
 	{
-		return new T;
+	
 	}
+	
+	public T getFirst()
+	{
+		
+	}
+	
+	public T getLast()
+	{
+	
+	}
+	*/
+	
+	public int indexOf(Object o)
+	{
+		return 0;
+	}
+	
 	
 	public void clear()
 	{
