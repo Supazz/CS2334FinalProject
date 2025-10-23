@@ -44,10 +44,18 @@ public class LinkedList <T>{
 			
 		}
 		*/
+		
 		public boolean contains(Object o)
 		{
-			
-			System.out.println("this is a test for merge stuff pls ignor");
+			Node<T> currNode = head;
+			while(currNode.next != null)
+			{
+				if(currNode.getValue().equals(o))
+				{
+					return true;
+				}
+				currNode = currNode.next;
+			}
 			return false;
 		}
 		
