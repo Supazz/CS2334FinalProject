@@ -43,17 +43,22 @@ public class LinkedList <T>{
 		{
 			
 		}
-		
-		public void addLast(Node<T> node)
-		{
-			
-		}
+		*/
 		
 		public boolean contains(Object o)
 		{
+			Node<T> currNode = head;
+			while(currNode.next != null)
+			{
+				if(currNode.getValue().equals(o))
+				{
+					return true;
+				}
+				currNode = currNode.next;
+			}
 			return false;
 		}
-		*/
+		
 		public void remove(T value) {
 			if (this.head == null ) {
 				return;
