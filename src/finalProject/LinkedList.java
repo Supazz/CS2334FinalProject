@@ -43,17 +43,14 @@ public class LinkedList <T>{
 		{
 			
 		}
-		
-		public void addLast(Node<T> node)
-		{
-			
-		}
-		
+		*/
 		public boolean contains(Object o)
 		{
+			
+			System.out.println("this is a test for merge stuff pls ignor");
 			return false;
 		}
-		*/
+		
 		public void remove(T value) {
 			if (this.head == null ) {
 				return;
