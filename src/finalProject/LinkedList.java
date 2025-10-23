@@ -6,14 +6,54 @@ public class LinkedList <T>{
 		
 		public int size()
 		{
-			return 0;
+			return size;
 		}
 		
-		public void add(Node<T> node)
+		public void add(T item)
+		{
+			 Node<T> node = new Node<T>(item);
+			 
+			 //If the list is empty, make this new node the first node
+		     if (this.head == null) 
+		     {
+		     	this.head = node;
+		     	this.size++;
+		     	return;
+		     }
+		     
+		     Node<T> currentNode = head;
+		     //Iterate until the last node in the list
+		     while(currentNode.next != null)
+		     {
+		    	 currentNode = currentNode.next;
+		     }
+		     
+		     //Add this new node to the end of the list
+		     currentNode.next = node;
+		     this.size++;
+		}
+		
+		/*  Maybe do these later
+		public void add(int index, Node<T> node)
 		{
 			
 		}
 		
+		public void addFirst(Node<T> node)
+		{
+			
+		}
+		
+		public void addLast(Node<T> node)
+		{
+			
+		}
+		
+		public boolean contains(Object o)
+		{
+			return false;
+		}
+		*/
 		public void remove(T value) {
 			if (this.head == null ) {
 				return;
@@ -35,6 +75,23 @@ public class LinkedList <T>{
 		}
 		}
 		
+		/*  Maybe later
+		public void remove()
+		{
+			
+		}
+		
+		public void remove(int index)
+		{
+			
+		}
+		
+		
+		public void removeFirst()
+		{
+			
+		}
+		*/
 		public T get(int index) {
 			if (this.size ==0 || index  > size -1) {
 				return null;
@@ -54,11 +111,27 @@ public class LinkedList <T>{
 			return null;
 		}
 		
+		/*  Maybe later
+		public T getFirst()
+		{
+			return null;
+		}
+		
+		public T getLast()
+		{
+			return null;
+		}
+		
+		public int indexOf(Object o)
+		{
+			return 0;
+		}
+		
 		public void clear()
 		{
 			
 		}
-		
+		*/
 		
 		
 		
